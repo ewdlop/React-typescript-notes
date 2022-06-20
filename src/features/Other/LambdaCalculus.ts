@@ -16,6 +16,10 @@ describe('Testing', () => {
 
     type Bool_Operator = (x: Bool) => (y: Bool) => Bool;
 
+    type Monad<A> = {
+        map: <B>(f: (a: A) => B) => Monad<B>
+    }
+
     const And: Bool_Operator = p => q => p(q)(p)
     const Or: Bool_Operator = p => q => p(p)(q)
     const Not: Bool_Operator = p => F(T)
