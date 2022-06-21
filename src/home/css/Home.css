@@ -11,7 +11,7 @@ html {
 /* The Masonry Container */
 .masonry {
   margin: auto;
-  max-width: 1515px;
+  max-width: 75%;
   column-gap: 0.0em;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -46,7 +46,7 @@ html {
   background-color: #008CBA;
 }
 
-.item:hover .overlay{
+.item:hover .overlay {
   opacity: 1;
 }
 
@@ -64,9 +64,6 @@ html {
 
 
 .parallax-image {
-
-  height: 50%;
-
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,6 +98,7 @@ html {
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .masonry {
     column-count: 3;
+    max-width: 100%;
   }
 }
 
@@ -108,11 +106,19 @@ html {
 @media only screen and (max-width: 767px) and (min-width: 540px) {
   .masonry {
     column-count: 2;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .masonry {
+    column-count: 1;
+    max-width: 100%;
   }
 }
 
 #navbar {
-  background-color: #333; /* Black background color */
+  background-color: rgba(51, 51, 51, 0.742); /* Black background color */
   position: fixed; /* Make it stick/fixed */
   top: -50px; /* Hide the navbar 50 px outside of the top view */
   width: 100%; /* Full width */
@@ -135,26 +141,39 @@ html {
   color: black;
 }
 
+.text {
+  max-width: 100%;
+  width: auto;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+
 .leaf-shaped-element {
-	float: left;
-	width: 400px;
-	height: 400px;
+  max-width: 100%;
+  width: auto;
+	height: 700px;
 	shape-outside: url(../images/leaf.webp);
 	shape-margin: 15px;
 	shape-image-threshold: 0.5;
-	background: #009966 url(../images/forest.jpg);
+	background: #009966 url(../images/forest.jpg) no-repeat center;
 	mask-image: url(../images/leaf.webp);
 }
 
-.top-section {
-  text-align: center;
-  height: 600px;
+.carousel {
   padding-top: 5em;
+  padding-bottom: 5em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .bottom-section {
-  width: 900px;
-  height: 900px;
-  margin-left: 50px;
-  margin-top: -220px;
+  margin-top: -10%;
+  align-items: center;
 };
+
+.background-color{
+  background-color: #009966;
+}

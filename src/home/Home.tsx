@@ -51,46 +51,47 @@ const Home: React.FC = () => {
     }, [scrollState])
 
     const activeStyle = { color: "#F15B2A" };
-    
+    const jsImageStyle = { maxWidth: "100%", width: "auto", height: "auto" };
+
     return (
-        <div>
+        <div className="container-fluid">
             <div id="navbar">
                 <NavLink to="/" activeStyle={activeStyle} exact>Home</NavLink>
             </div>
             <div className="parallax-image img1">
-                <div className='top-section'>
+                <div className='carousel'>
                     <Carousel>
                         <Carousel.Item>
                             <img src={carousel_image1}
                                 alt="First slide"
                                 width="800px"
-                                height="660px"
+                                height="auto"
                             />
                             <Carousel.Caption>
                                 <h3>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img src={carousel_image2}
                                 alt="Third slide"
                                 width="800px"
-                                height="660px"
+                                height="auto"
                             />
                             <Carousel.Caption>
                                 <h3>Second slide label</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img src={carousel_image3}
                                 alt="Third slide"
                                 width="800px"
-                                height="660px"
+                                height="auto"
                             />
                             <Carousel.Caption>
                                 <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
@@ -197,9 +198,23 @@ const Home: React.FC = () => {
                     <path fill="#ff5500" fillOpacity="1" d="M0,192L11.4,202.7C22.9,213,46,235,69,202.7C91.4,171,114,85,137,64C160,43,183,85,206,117.3C228.6,149,251,171,274,197.3C297.1,224,320,256,343,277.3C365.7,299,389,309,411,288C434.3,267,457,213,480,165.3C502.9,117,526,75,549,48C571.4,21,594,11,617,21.3C640,32,663,64,686,74.7C708.6,85,731,75,754,74.7C777.1,75,800,85,823,74.7C845.7,64,869,32,891,32C914.3,32,937,64,960,117.3C982.9,171,1006,245,1029,245.3C1051.4,245,1074,171,1097,154.7C1120,139,1143,181,1166,218.7C1188.6,256,1211,288,1234,293.3C1257.1,299,1280,277,1303,224C1325.7,171,1349,85,1371,58.7C1394.3,32,1417,64,1429,80L1440,96L1440,0L1428.6,0C1417.1,0,1394,0,1371,0C1348.6,0,1326,0,1303,0C1280,0,1257,0,1234,0C1211.4,0,1189,0,1166,0C1142.9,0,1120,0,1097,0C1074.3,0,1051,0,1029,0C1005.7,0,983,0,960,0C937.1,0,914,0,891,0C868.6,0,846,0,823,0C800,0,777,0,754,0C731.4,0,709,0,686,0C662.9,0,640,0,617,0C594.3,0,571,0,549,0C525.7,0,503,0,480,0C457.1,0,434,0,411,0C388.6,0,366,0,343,0C320,0,297,0,274,0C251.4,0,229,0,206,0C182.9,0,160,0,137,0C114.3,0,91,0,69,0C45.7,0,23,0,11,0L0,0Z">
                     </path>
                 </svg>
-                <div className='bottom-section'>
-                    <img alt='' src={js_image} height='700px' width='700px' />
+                <div className='row bottom-section'>
+                    <div className='col-lg-6 col-sm-12'>
+                        <img alt='' src={js_image} style={jsImageStyle}/>
+                    </div>
+                    <div className='col-lg-6 col-sm-12'>
+                        <div></div>
+                        <div className='text'>
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                        <div className='text'>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div className="parallax-image background-color">
+
             </div>
         </div>
     );
