@@ -73,9 +73,8 @@ html {
   background-size: cover;
 }
 
-.img1 { background-image: url("https://i.pinimg.com/originals/9d/a7/aa/9da7aaf50833e6a0580c7ebea92f4a06.png"); }
-.img2 { background-image: url("https://cdn3.tnwcdn.com/wp-content/blogs.dir/1/files/2015/04/colortheory.jpg") }
-.img3 { background-image: url("https://backgroundcheckall.com/wp-content/uploads/2017/12/website-background-design.jpg"); }
+.img1 { background-image: url(../images/parallax/image1.png) }
+.img2 { background-image: url(../images/parallax/image2.jpg) }
 
 
 .sticky {
@@ -135,3 +134,27 @@ html {
   background-color: #ddd;
   color: black;
 }
+
+.leaf-shaped-element {
+	float: left;
+	width: 400px;
+	height: 400px;
+	shape-outside: url(../images/leaf.webp);
+	shape-margin: 15px;
+	shape-image-threshold: 0.5;
+	background: #009966 url(../images/forest.jpg);
+	mask-image: url(../images/leaf.webp);
+}
+
+.top-section {
+  text-align: center;
+  height: 600px;
+  padding-top: 5em;
+}
+
+.bottom-section {
+  width: 900px;
+  height: 900px;
+  margin-left: 50px;
+  margin-top: -220px;
+};
