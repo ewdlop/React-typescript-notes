@@ -1,12 +1,11 @@
 import React from 'react';
 import { Route,Switch } from 'react-router-dom'
-import logo from './logo.svg';
 import './App.css';
-import Task from '../features/Task/ClassComponent/Task'
-import Home from '../features/Home/FunctionalComponet/Home'
-import ThreeSceneFiber from '../features/ThreeJS/FunctionalComponent/ReactThreeFiber/ThreeSceneFiber';
-import ThreeScene from '../features/ThreeJS/ClassComponet/ThreeScene'
-import GetStarships from '../features/ConsumeSwapi/GetStarShips'
+import Home from '../home/Home'
+// import Task from '../features/Task/ClassComponent/Task'
+// import ThreeSceneFiber from '../features/ThreeJS/FunctionalComponent/ReactThreeFiber/ThreeSceneFiber';
+// import ThreeScene from '../features/ThreeJS/ClassComponet/ThreeScene'
+// import GetStarships from '../features/ConsumeSwapi/GetStarShips'
 
 function App() {
   return (
@@ -27,8 +26,6 @@ function App() {
       </header> */}
       <Switch>
           <Route exact path="/" component={Home}/>
-          <Route path="/ThreeJSScene" component={ThreeScene}/>
-          <Route path="/StarShip" component={GetStarships}/>
       </Switch>
     </div>
   );
