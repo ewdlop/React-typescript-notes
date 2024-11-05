@@ -51,7 +51,7 @@ Here's an extended version that includes Vue, Svelte, and additional UI framewor
 
 Qucik motivational quote:(image the project you being working on needs to swap to other framework out of sudden)
 "Ghost-Project" development(it is like  > O(n) scale works)(linear would be still a miracle wouldnt you think)
-if it is o(1) that would be...but
+if it is o(1) that would be...but 一勞永逸 mentality though.. Nohmmm
 
 
 ### Step 1: Define Union Types for Component Props by Framework
