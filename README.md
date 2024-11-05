@@ -49,6 +49,11 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 Here's an extended version that includes Vue, Svelte, and additional UI frameworks for TypeScript union types.
 
+Qucik motivational quote:(image the project you being working on needs to swap to other framework out of sudden)
+"Ghost-Project" development(it is like  > O(n) scale works)(linear would be still a miracle wouldnt you think)
+if it is o(1) that would be...but
+
+
 ### Step 1: Define Union Types for Component Props by Framework
 
 Each framework has unique ways to handle components and props. We’ll create an interface for each framework's props and add them to a union type.
