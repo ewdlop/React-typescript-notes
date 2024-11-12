@@ -225,3 +225,63 @@ renderComponent(svelteComponent);
 4. **Flexibility**: Developers can render different framework components and handle events with minimal effort.
 
 This approach offers a versatile and type-safe way to manage multiple UI frameworks in TypeScript, facilitating cross-framework compatibility without sacrificing type safety.
+
+###
+
+在JavaScript中，模块化是组织代码的关键。主要有两种模块系统：CommonJS和ES模块（ESM）。此外，文件扩展名`.js`和`.mjs`在Node.js中也有特定含义。
+
+**CommonJS与ES模块：**
+
+- **CommonJS：**
+  - **导入：** 使用`require()`函数。
+    ```javascript
+    const moduleA = require('./moduleA');
+    ```
+  - **导出：** 使用`module.exports`或`exports`对象。
+    ```javascript
+    module.exports = function() { /* ... */ };
+    ```
+  - **特性：** 同步加载，主要用于Node.js环境。 :contentReference[oaicite:5]{index=5}
+
+- **ES模块（ESM）：**
+  - **导入：** 使用`import`语句。
+    ```javascript
+    import moduleA from './moduleA';
+    ```
+  - **导出：** 使用`export`语句。
+    ```javascript
+    export function myFunction() { /* ... */ }
+    ```
+  - **特性：** 静态结构，支持异步加载，适用于浏览器和Node.js环境。 :contentReference[oaicite:6]{index=6}
+
+**`.js`与`.mjs`文件扩展名：**
+
+- **`.js`：**
+  - **默认行为：** 在Node.js中，`.js`文件默认被视为CommonJS模块。
+  - **配置：** 如果在`package.json`中设置`"type": "module"`，则`.js`文件将被视为ES模块。 :contentReference[oaicite:7]{index=7}
+
+- **`.mjs`：**
+  - **用途：** 明确指定文件为ES模块，无需在`package.json`中设置`"type"`字段。
+  - **优势：** 在混合使用CommonJS和ES模块的项目中，使用`.mjs`可以清晰地区分模块类型。 :contentReference[oaicite:8]{index=8}
+
+**选择建议：**
+
+- **新项目：** 建议使用ES模块，因其是现代JavaScript的标准，具有更好的静态分析和优化能力。
+- **现有项目：** 如果项目主要使用CommonJS，且需要与大量现有模块兼容，继续使用CommonJS可能更为实际。
+- **混合使用：** 在需要同时使用两种模块系统时，使用`.mjs`扩展名可以帮助区分ES模块，避免混淆。 :contentReference[oaicite:9]{index=9}
+
+理解这些模块系统和文件扩展名的差异，有助于在项目中做出明智的选择，确保代码的可维护性和兼容性。
+
+*时间点：2024年11月12日，星期二，15:02:33（美国东部时间）*
+
+
+以下是几个参考资料，您可以查看相关内容：
+
+1. **CommonJS与ES模块的区别**：[CommonJS vs ES Modules - The Shift from Require to Import](https://nikolasbarwicki.com/articles/commonjs-vs-es-modules-the-shift-from-require-to-import/)
+   
+2. **JavaScript文件扩展名`.js`与`.mjs`的用法**：[Node.js 官方文档 - ECMAScript Modules](https://nodejs.org/dist/latest-v16.x/docs/api/esm.html)
+
+3. **Node.js中模块化处理**：[Modules: CommonJS modules - Node.js v16.13.0 Documentation](https://nodejs.org/api/modules.html#modules_commonjs_modules)
+
+*时间点：2024年11月12日，星期二，15:04:33（美国东部时间）*
+
