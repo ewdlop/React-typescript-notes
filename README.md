@@ -1,3 +1,5 @@
+[![CodeQL](https://github.com/ewdlop/React-typescript-notes/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/ewdlop/React-typescript-notes/actions/workflows/github-code-scanning/codeql)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
