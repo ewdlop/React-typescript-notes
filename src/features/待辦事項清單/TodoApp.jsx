@@ -44,5 +44,3 @@ class TodoApp extends React.Component {
     }));
   }
 }
-
-ReactDOM.render(<TodoApp />, document.querySelector("#app"));
